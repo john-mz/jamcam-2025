@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JamCam 2025 - Scouts de Colombia">
+    <title>JamCam 2025 - Scouts de Colombia</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#58238B">
+    <meta name="msapplication-TileColor" content="#58238B">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="/" class="navbar-logo">
+                    <img src="assets/logo-jamcam-color.svg" alt="Logo JamCam 2025">
+                </a>
+                <button class="navbar-toggle" aria-label="Menú">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="hamburger-icon">
+                        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </button>
+                <ul class="navbar-menu">
+                    <li><a href="#acerca">Acerca de JamCam</a></li>
+                    <li><a href="#participar">Quiero Participar</a></li>
+                    <li><a href="#programa">Programa</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#redes">Redes</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#voluntarios" class="voluntarios-link">Voluntarios</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-banner">
+            <div class="banner-content">
+                <img src="assets/logo-jamcam-white.webp" alt="Logo JamCam Blanco" class="banner-logo">
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <div class="countdown-container stagger-animation">
+                <div class="countdown-item">
+                    <img src="assets/timer-desktop-green.webp" alt="Timer Background" class="timer-bg desktop">
+                    <img src="assets/timer-mobile-green.webp" alt="Timer Background" class="timer-bg mobile">
+                    <div class="countdown-value" id="days">000</div>
+                    <div class="countdown-label">Días</div>
+                </div>
+                <div class="countdown-item">
+                    <img src="assets/timer-desktop-orange.webp" alt="Timer Background" class="timer-bg desktop">
+                    <img src="assets/timer-mobile-orange.webp" alt="Timer Background" class="timer-bg mobile">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <img src="assets/timer-desktop-purple.webp" alt="Timer Background" class="timer-bg desktop">
+                    <img src="assets/timer-mobile-purple.webp" alt="Timer Background" class="timer-bg mobile">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                    <img src="assets/timer-desktop-yellow.webp" alt="Timer Background" class="timer-bg desktop">
+                    <img src="assets/timer-mobile-yellow.webp" alt="Timer Background" class="timer-bg mobile">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="info-container">
+                <div class="info-text-column">
+                    <div class="text-row slide-in-left">
+                        <h1>JamCam 2025 - Américas Unidas por la Paz</h1>
+                        <h2>Descubre la aventura del JamCam 2025</h2>
+                    </div>
+                    <div class="text-row fade-up">
+                        <p>El JamCam 2025 no es solo un evento, es una experiencia transformadora donde miles de jóvenes de toda América se reunirán para celebrar la hermandad, la diversidad y la aventura. A través de actividades diseñadas para promover la inclusión, la sostenibilidad y la paz, este evento marcará un antes y un después en la vida de cada participante.</p>
+                    </div>
+                    <div class="text-row fade-up">
+                        <a href="#" class="ver-mas-btn">
+                            Ver más
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="info-image-column slide-in-right">
+                    <img src="assets/info-picture.webp" alt="Information Section Image">
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-section">
+            <h2 class="cards-section-title fade-up">Américas Unidas por la Paz: Un evento con propósito</h2>
+            <div class="cards-container stagger-animation">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 32l32 0c17.7 0 32 14.3 32 32l0 32L96 96l0-32c0-17.7 14.3-32 32-32zm64 96l0 320c0 17.7-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32l0-59.1c0-34.6 9.4-68.6 27.2-98.3C40.9 267.8 49.7 242.4 53 216L60.5 156c2-16 15.6-28 31.8-28l99.8 0zm227.8 0c16.1 0 29.8 12 31.8 28L459 216c3.3 26.4 12.1 51.8 25.8 74.6c17.8 29.7 27.2 63.7 27.2 98.3l0 59.1c0 17.7-14.3 32-32 32l-128 0c-17.7 0-32-14.3-32-32l0-320 99.8 0zM320 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 32-96 0 0-32zm-32 64l0 160-64 0 0-160 64 0z"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Explora y descubre</h3>
+                        <p class="card-description">Sumérgete en la aventura del JamCam 2025. Este es el momento de abrir los ojos a nuevas experiencias, aprender de otras culturas y conectar con la naturaleza. Explora lo que te rodea, haz nuevas amistades y prepárate para vivir días llenos de emoción y aprendizaje.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Comparte y construye</h3>
+                        <p class="card-description">Cada historia, cada idea y cada acción pueden marcar la diferencia. Comparte lo que sabes, aprende de los demás y trabaja en equipo para crear momentos inolvidables. Juntos, construiremos un ambiente de respeto, solidaridad y crecimiento.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2c25.9 15.8 53.7 25.9 77.7 31.6l0-31.5C265.8 108.5 250 71.5 248.6 28c-.4-11.3-7.5-21.5-18.4-24.4c-7.6-2-15.8-.2-21 5.8c-13.3 15.4-32.7 44.6-48.4 87.2zM320 144l0 30.6s0 0 0 0l0 1.3s0 0 0 0l0 32.1c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8 .9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5L245.6 448l74.4 0c88.4 0 160-71.6 160-160l0-160 29.9-44.9c1.3-2 2.1-4.4 2.1-6.8c0-6.8-5.5-12.3-12.3-12.3L400 64c-44.2 0-80 35.8-80 80zm80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Transforma y deja huella</h3>
+                        <p class="card-description">El cambio comienza con pequeñas acciones. Inspírate en las experiencias vividas y llévalas más allá del campamento. Aplica lo aprendido en tu comunidad y conviértete en un agente de paz. Tu impacto puede llegar más lejos de lo que imaginas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-icon slide-in-left">
+                    <img src="assets/guacamaya.svg" alt="Guacamaya Icon">
+                </div>
+                <div class="newsletter-text-content slide-in-right">
+                    <h2 class="newsletter-title">Mantente Informado</h2>
+                    <p class="newsletter-text">Regístrate y recibe toda la información para que vengas preparado al JamCam 2025</p>
+                    <a href="#" class="register-btn">
+                        Registrarme
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover-section">
+            <div class="discover-content">
+                <div class="discover-text fade-up">
+                    <h2 class="discover-title">Cali, Colombia:</h2>
+                    <h3 class="discover-subtitle">El Corazón del JamCam 2025</h3>
+                    <p class="discover-description">Cali, conocida como la capital mundial de la salsa, es una ciudad vibrante con una rica historia y una cultura inigualable. Su hospitalidad y su espíritu festivo hacen de ella el destino perfecto para este gran evento scout.</p>
+                </div>
+                <div class="gallery stagger-animation">
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="assets/cali-1.png" alt="Cali Image 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/cali-2.png" alt="Cali Image 2">
+                        </div>
+                    </div>
+                    <div class="gallery-row">
+                        <div class="gallery-item">
+                            <img src="assets/cali-3.png" alt="Cali Image 3">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/cali-4.png" alt="Cali Image 4">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/cali-5.png" alt="Cali Image 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-button-container fade-up">
+                    <a href="#" class="discover-btn">
+                        Descubre Cali
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logos fade-up">
+                <img src="assets/scouts-colombia-logo.png" alt="Scouts Colombia Logo" class="footer-logo">
+                <img src="assets/world-scouting-logo.png" alt="World Scouting Logo" class="footer-logo">
+            </div>
+            <hr class="footer-divider fade-in">
+            <div class="footer-bottom">
+                <div class="footer-copyright slide-in-left">
+                    <p>2025 Todos los derechos reservados</p>
+                    <p>Desarrollado por Asociación Scouts de Colombia</p>
+                    <p><a href="https://linktr.ee/JamCamOfficial" target="_blank" rel="noopener noreferrer">https://linktr.ee/JamCamOfficial</a></p>
+                </div>
+                <div class="footer-social slide-in-right">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5l53.3-.2V4.2c-25.6-3.4-51.3-5.2-77.1-5.2-106.1 0-170.9 60.5-170.9 139.3v63.2H0v97.8h74V512H80V299.3z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Spotify">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html> 
