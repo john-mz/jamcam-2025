@@ -124,7 +124,7 @@ img {
     width: 100%;
     padding-top: 50%;
     padding-bottom: 8%;
-    background-image: url('../assets/banner-desktop-green.png');
+    background-image: url('../assets/banner-desktop-green.webp');
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -329,7 +329,7 @@ img {
 
 @media (max-width: 768px) {
     .info-section {
-        background-image: url('../assets/info-background-mobile-green.png');
+        background-image: url('../assets/info-background-mobile-green.webp');
         min-height: auto;
         background-size: 120% auto;
         background-position: top center;
@@ -827,7 +827,7 @@ img {
     .banner-content {
         padding-top: 180%;
         padding-bottom: 0;
-        background-image: url('../assets/banner-mobile-green.png');
+        background-image: url('../assets/banner-mobile-green.webp');
         background-size: cover;
         background-position: center center;
     }
