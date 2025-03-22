@@ -51,7 +51,7 @@ img {
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar-logo img {
@@ -60,47 +60,11 @@ img {
 }
 
 .navbar-menu {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navbar-menu li {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-menu a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 8px 0;
-    display: block;
-}
-
-.navbar-menu .voluntarios-link {
-    background-color: var(--orange);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.3em;
-    fill: #FFFFFF;
-    color: #FFFFFF;
-    border: 5px solid var(--orange);
-    border-radius: 0px;
-    padding: 8px 15px;
+    display: none !important;
 }
 
 .navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
+    display: none !important;
 }
 
 .hamburger-icon {
