@@ -535,6 +535,12 @@ img {
     margin-bottom: 40px;
 }
 
+.newsletter-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .register-btn {
     display: inline-flex;
     align-items: center;
@@ -547,6 +553,7 @@ img {
     text-decoration: none;
     border: 2px solid var(--green);
     transition: all 0.3s ease;
+    border-radius: 4px;
 }
 
 .register-btn:hover {
@@ -563,6 +570,23 @@ img {
 
 .register-btn:hover svg {
     fill: var(--green);
+}
+
+@media (max-width: 768px) {
+    .newsletter-buttons {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .register-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .register-btn svg {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 /* Discover section styles */
