@@ -24,7 +24,7 @@ Official website for JamCam 2025 - Américas Unidas por la Paz, a transformative
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/jamcam-2025.git
+   git clone https://github.com/MiloAgudelo/jamcam-2025.git
    ```
 
 2. Open the project folder:

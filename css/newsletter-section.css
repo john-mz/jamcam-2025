@@ -1,0 +1,159 @@
+.newsletter-section {
+    padding: 100px 20px;
+    background-color: var(--background-color);
+}
+
+.newsletter-content {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.newsletter-icon {
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.newsletter-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.newsletter-text-content {
+    text-align: left;
+    flex: 1;
+    max-width: 600px;
+}
+
+.newsletter-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--purple);
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.newsletter-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 40px;
+    white-space: normal;
+}
+
+.newsletter-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.desktop-only {
+    display: block;
+}
+.mobile-only {
+    display: none;
+}
+
+.register-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--green);
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid var(--green);
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.register-btn:hover {
+    background-color: #FFFFFF;
+    color: var(--green);
+}
+
+.register-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover svg {
+    fill: var(--green);
+}
+
+@media (max-width: 768px) {
+    .newsletter-section {
+        padding: 50px 20px;
+    }
+
+    .newsletter-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .newsletter-icon {
+        width: 160px;
+        height: 160px;
+    }
+
+    .newsletter-text-content {
+        text-align: center;
+    }
+    
+    .newsletter-title {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        white-space: normal;
+        max-width: 200px;
+    }
+
+    .newsletter-text {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .newsletter-buttons {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .register-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .register-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        margin-bottom: 15px;
+    }
+
+    .mobile-inline-icon img {
+        width: 80px;
+        height: 120px;
+    }
+}
