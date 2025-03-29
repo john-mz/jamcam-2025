@@ -145,4 +145,30 @@ document.addEventListener('DOMContentLoaded', function() {
             goToSlide(currentIndex);
         }, 1500); // Change slide every 1.5 seconds
     }
+
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+
+    // Language selector visibility control
+    const languageSelector = document.querySelector('.language-selector');
+    const footer = document.querySelector('.footer');
+
+    function checkLanguageSelectorVisibility() {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        if (footerRect.top <= windowHeight) {
+            languageSelector.style.opacity = '0';
+            languageSelector.style.pointerEvents = 'none';
+        } else {
+            languageSelector.style.opacity = '1';
+            languageSelector.style.pointerEvents = 'auto';
+        }
+    }
+
+    window.addEventListener('scroll', checkLanguageSelectorVisibility);
+    window.addEventListener('resize', checkLanguageSelectorVisibility);
+    checkLanguageSelectorVisibility(); // Initial check
 }); 

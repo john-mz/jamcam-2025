@@ -28,10 +28,15 @@
     z-index: 1;
 }
 
+@media (max-width: 1024px) {
+    .main-banner {
+        margin-top: var(--nav-height-mobile);
+    }
+}
+
 @media (max-width: 768px) {
      /* Banner mobile */
      .main-banner {
-        margin-top: var(--nav-height-mobile);
         min-height: auto;
         overflow: hidden;
     }

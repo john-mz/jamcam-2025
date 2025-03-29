@@ -17,9 +17,64 @@
 
 .countdown-item {
     position: relative;
-    width: 250px;
+    width: 256px;
+    height: 144px;
     text-align: center;
+    border-radius: 10px;
 }
+
+.countdown-item .card-decorative-svg {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    pointer-events: none;
+}
+
+.countdown-item .card-decorative-svg .cls-1 {
+    stroke: #FFFFFF;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4.13px;
+}
+
+.countdown-item:nth-child(1) {
+    background-color: var(--green);
+}
+
+.countdown-item:nth-child(1) .card-decorative-svg {
+    margin-right: 185px;
+    margin-bottom: 75px;
+    transform: rotate(90deg);
+}
+
+.countdown-item:nth-child(2) {
+    background-color: var(--orange);
+}
+
+.countdown-item:nth-child(2) .card-decorative-svg {
+    margin-right: 125px;
+    margin-bottom: 130px;
+}
+
+.countdown-item:nth-child(3) {
+    background-color: var(--purple);
+}
+
+.countdown-item:nth-child(3) .card-decorative-svg {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.countdown-item:nth-child(4) {
+    background-color: var(--yellow);
+}
+
+.countdown-item:nth-child(4) .card-decorative-svg {
+    margin-right: -40px;
+    margin-bottom: 75px;
+    transform: rotate(90deg);	
+}
+
 
 .timer-bg {
     width: 100%;
@@ -68,14 +123,7 @@
 
     .countdown-item {
         width: 200px;
-    }
-
-    .timer-bg.desktop {
-        display: none;
-    }
-
-    .timer-bg.mobile {
-        display: block;
+        height: 170px;
     }
 
     .countdown-value {
@@ -89,6 +137,34 @@
         font-size: 1rem;
         font-weight: 400;
         color: #FFFFFF;
+    }
+
+    .countdown-item .card-decorative-svg {
+        width: 140px;
+    }
+
+    .countdown-item:nth-child(1) .card-decorative-svg {
+        margin-right: 55px;
+        margin-bottom: 155px;
+        transform: none;
+    }
+    
+    .countdown-item:nth-child(2) .card-decorative-svg {
+        margin-right: 120px;
+        margin-bottom: 80px;
+        transform: rotate(90deg);
+    }
+    
+    .countdown-item:nth-child(3) .card-decorative-svg {
+        margin-right: -55px;
+        margin-bottom: 80px;
+        transform: rotate(90deg);
+    }
+    
+    .countdown-item:nth-child(4) .card-decorative-svg {
+        margin-right: 10px; 
+        margin-bottom: 10px;
+        transform: none;
     }
 }
 

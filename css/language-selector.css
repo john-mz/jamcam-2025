@@ -1,0 +1,102 @@
+.language-selector {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    transition: opacity 0.3s ease;
+}
+
+.language-button,
+.language-option {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+    background: white;
+    position: relative;
+}
+
+.language-button img,
+.language-option img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.language-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0 8px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    pointer-events: none;
+    z-index: 2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    letter-spacing: 0.5px;
+}
+
+.language-button .language-label {
+    display: none;
+}
+
+.language-options {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.language-selector:hover .language-options {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.language-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .language-button,
+    .language-option {
+        width: 50px;
+        height: 50px;
+    }
+
+    .language-options {
+        bottom: 60px;
+        gap: 20px;
+    }
+
+    .language-label {
+        padding: 12px 0 6px;
+        font-size: 11px;
+    }
+} 
