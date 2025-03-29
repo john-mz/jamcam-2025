@@ -67,7 +67,17 @@
     pointer-events: none;
 }
 
-.language-selector:hover .language-options {
+/* Show menu on hover */
+@media (hover: hover) {
+    .language-selector:hover .language-options {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+}
+
+/* Show menu when active (for click and touch) */
+.language-options.active {
     opacity: 1;
     transform: translateY(0);
     pointer-events: all;
