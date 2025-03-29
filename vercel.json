@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/es/index.html"
+    },
+    {
+      "src": "/en",
+      "dest": "/en/index.html"
+    },
+    {
+      "src": "/es",
+      "dest": "/es/index.html"
+    },
+    {
+      "src": "/fr",
+      "dest": "/fr/index.html"
+    },
+    {
+      "src": "/pt",
+      "dest": "/pt/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+} 
