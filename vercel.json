@@ -1,27 +1,17 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/es/index.html"
-    },
-    {
-      "src": "/en",
-      "dest": "/en/index.html"
-    },
-    {
-      "src": "/es",
-      "dest": "/es/index.html"
-    },
-    {
-      "src": "/fr",
-      "dest": "/fr/index.html"
-    },
-    {
-      "src": "/pt",
-      "dest": "/pt/index.html"
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
-} 
+    "version": 2,
+    "rewrites": [
+      { "source": "/", "destination": "/es/" },
+      { "source": "/en", "destination": "/en/" },
+      { "source": "/en/(.*)", "destination": "/en/$1" },
+      { "source": "/es", "destination": "/es/" },
+      { "source": "/es/(.*)", "destination": "/es/$1" },
+      { "source": "/fr", "destination": "/fr/" },
+      { "source": "/fr/(.*)", "destination": "/fr/$1" },
+      { "source": "/pt", "destination": "/pt/" },
+      { "source": "/pt/(.*)", "destination": "/pt/$1" }
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+  
