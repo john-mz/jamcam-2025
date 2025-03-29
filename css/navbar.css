@@ -12,12 +12,12 @@
 
 .navbar-container {
     width: 100%;
-    padding: 0 100px;
+    padding: 0 20px;
     margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navbar-logo img {
@@ -25,58 +25,16 @@
     width: auto;
 }
 
+/* Hide menu items */
 .navbar-menu {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navbar-menu li {
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-menu a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 8px 0;
-    display: block;
-}
-
-.navbar-menu .voluntarios-link {
-    background-color: var(--orange);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.3em;
-    fill: #FFFFFF;
-    color: #FFFFFF;
-    border: 5px solid var(--orange);
-    border-radius: 0px;
-    padding: 8px 15px;
+    display: none;
 }
 
 .navbar-toggle {
     display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.hamburger-icon {
-    width: 24px;
-    height: 24px;
-    fill: var(--orange);
 }
 
 @media (max-width: 1024px) {
-    /* Navbar tablet/mobile */
     .navbar {
         height: var(--nav-height-mobile);
         width: 100vw;
@@ -85,111 +43,15 @@
     .navbar-container {
         max-width: 100%;
         padding: 0 20px;
-        position: relative;
     }
 
     .navbar-logo img {
         height: 80px;
     }
-
-    .navbar-toggle {
-        display: block;
-        order: 1;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .navbar-menu {
-        display: flex;
-        position: fixed;
-        top: var(--nav-height-mobile);
-        left: 0;
-        right: 0;
-        width: 100vw;
-        background-color: var(--background-color);
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-        gap: 10px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-20px);
-        transition: all 0.3s ease-in-out;
-        pointer-events: none;
-    }
-
-    .navbar-menu.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-
-    .navbar-menu li {
-        width: 100%;
-        text-align: center;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .navbar-menu.active li {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .navbar-menu li:nth-child(1) { transition-delay: 0.05s; }
-    .navbar-menu li:nth-child(2) { transition-delay: 0.1s; }
-    .navbar-menu li:nth-child(3) { transition-delay: 0.15s; }
-    .navbar-menu li:nth-child(4) { transition-delay: 0.2s; }
-    .navbar-menu li:nth-child(5) { transition-delay: 0.25s; }
-    .navbar-menu li:nth-child(6) { transition-delay: 0.3s; }
-    .navbar-menu li:nth-child(7) { transition-delay: 0.35s; }
-
-    .navbar-menu a {
-        padding: 12px 15px;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .navbar-menu .voluntarios-link {
-        background-color: transparent;
-        font-size: 1.1rem;
-        font-weight: 500;
-        line-height: normal;
-        color: var(--text-color);
-        border: none;
-        padding: 12px 15px;
-    }
 }
 
-/* Additional adjustments for mobile */
 @media (max-width: 768px) {
     .navbar-container {
         padding: 0 15px;
-    }
-
-    .navbar-toggle {
-        right: 15px;
-    }
-
-    .navbar-menu {
-        padding: 10px 0;
-        gap: 5px;
-    }
-
-    .navbar-menu a {
-        padding: 8px 15px;
-        font-size: 0.95rem;
-        font-weight: 400;
-    }
-
-    .navbar-menu .voluntarios-link {
-        font-size: 0.95rem;
-        font-weight: 400;
-        padding: 8px 15px;
     }
 }
