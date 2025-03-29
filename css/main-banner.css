@@ -5,6 +5,7 @@
     min-height: 100vh;
     position: relative;
     overflow: visible;
+    will-change: transform;
 }
 
 .banner-content {
@@ -16,6 +17,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    will-change: transform;
 }
 
 .banner-logo {
@@ -26,6 +28,9 @@
     max-width: 30%;
     height: auto;
     z-index: 1;
+    will-change: transform;
+    content-visibility: auto;
+    contain: paint;
 }
 
 @media (max-width: 1024px) {
@@ -35,8 +40,8 @@
 }
 
 @media (max-width: 768px) {
-     /* Banner mobile */
-     .main-banner {
+    /* Banner mobile */
+    .main-banner {
         min-height: auto;
         overflow: hidden;
     }
@@ -47,11 +52,16 @@
         background-image: url('../assets/banner-mobile-green.webp');
         background-size: cover;
         background-position: center center;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
     }
 
     .banner-logo {
         max-width: 70%;
         top: 40%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) translateZ(0);
+        -webkit-transform: translate(-50%, -50%) translateZ(0);
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
     }
 }
