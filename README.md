@@ -1,10 +1,21 @@
+![JamCam 2025](assets/og-image.jpg)
+
 # JamCam 2025 Website
 
 Official website for JamCam 2025 - Américas Unidas por la Paz, a transformative Scout event that will bring together thousands of young people from across the Americas to celebrate brotherhood, diversity, and adventure.
 
+## About the Development
+
+This website is the result of a collaborative volunteer effort between:
+- **National Communications Commission** (Asociación Scouts de Colombia)
+- **NoLit Developers**
+
+All work on this project has been done on a voluntary basis, embodying the Scout spirit of service and commitment to the community.
+
 ## Features
 
 - Fully responsive design optimized for mobile, tablet, and desktop devices
+- Multi-language support (English, Spanish, French, Portuguese)
 - Interactive countdown timer with decorative elements
 - Dynamic language selector with flag icons
 - Animated sections with stagger effects on scroll
@@ -12,8 +23,10 @@ Official website for JamCam 2025 - Américas Unidas por la Paz, a transformative
 - Interactive image carousel
 - Newsletter section with downloadable resources
 - Discover section with image gallery
-- Mobile-optimized navigation with hamburger menu
-- Social media integration with modern icons
+- Mobile-optimized navigation
+- Social media integration
+- Custom 404 error pages
+- SEO optimized with Open Graph meta tags
 
 ## Technologies Used
 
@@ -27,27 +40,8 @@ Official website for JamCam 2025 - Américas Unidas por la Paz, a transformative
 - SVG for decorative elements and icons
 - Intersection Observer API for scroll animations
 - Google Fonts (Noto Sans)
+- Vercel for deployment
 - Vercel Analytics & Speed Insights
-
-## Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MiloAgudelo/jamcam-2025.git
-   ```
-
-2. Open the project folder:
-   ```bash
-   cd jamcam-2025
-   ```
-
-3. Open `index.html` in your browser or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   # Using Node.js
-   npx serve
-   ```
 
 ## Project Structure
 
@@ -59,6 +53,7 @@ jamcam-2025/
 │   ├── docs/
 │   └── [images]
 ├── css/
+│   ├── 404.css
 │   ├── navbar.css
 │   ├── main-banner.css
 │   ├── countdown-section.css
@@ -69,9 +64,33 @@ jamcam-2025/
 │   ├── footer.css
 │   ├── language-selector.css
 │   └── styles.css
-├── main.js
-└── index.html
+├── js/
+│   └── [JavaScript files]
+├── en/
+│   ├── index.html
+│   └── 404.html
+├── es/
+│   ├── index.html
+│   └── 404.html
+├── fr/
+│   ├── index.html
+│   └── 404.html
+├── pt/
+│   ├── index.html
+│   └── 404.html
+├── vercel.json
+└── README.md
 ```
+
+## Multilingual Support
+
+The website is available in four languages:
+- 🇺🇸 English
+- 🇪🇸 Spanish
+- 🇫🇷 French
+- 🇵🇹 Portuguese
+
+Each language version has its own directory with dedicated HTML files and content.
 
 ## Styling Guide
 
@@ -89,6 +108,20 @@ The website uses a consistent color scheme defined in CSS variables:
     --nav-height-mobile: 98px;
 }
 ```
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MiloAgudelo/jamcam-2025.git
+   ```
+
+2. Open the project folder:
+   ```bash
+   cd jamcam-2025
+   ```
+
+3. Open `index.html` in your browser or use a local server
 
 ## Browser Support
 
