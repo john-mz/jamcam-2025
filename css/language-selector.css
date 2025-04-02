@@ -1,15 +1,15 @@
 .language-selector {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     z-index: 99;
     transition: opacity 0.3s ease;
 }
 
 .language-button,
 .language-option {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -56,11 +56,11 @@
 
 .language-options {
     position: absolute;
-    bottom: 70px;
+    bottom: 60px;
     right: 0;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s ease;
@@ -96,13 +96,13 @@
 
     .language-button,
     .language-option {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
 
     .language-options {
-        bottom: 60px;
-        gap: 20px;
+        bottom: 55px;
+        gap: 12px;
     }
 
     .language-label {

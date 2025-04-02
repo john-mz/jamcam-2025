@@ -1,23 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JamCam 2025 - Scouts de Colombia">
-    <title>JamCam 2025 - Scouts de Colombia</title>
+
+    <title>JamCam 2025 - Americas United for Peace | Cali, Colombia</title>
+    <meta name="description" content="Cali will be the epicenter of Scouting with JamCam 2025, from December 26, 2025 to January 2, 2026. Thousands of young Scouts from the Americas will unite for peace, brotherhood, and adventure.">
     
+    <!-- Self-referencing canonical tag -->
+    <link rel="canonical" href="https://www.jamcam2025.com/en">
+
+    <!-- Hreflang tags for multilingual SEO -->
+    <link rel="alternate" hreflang="es" href="https://www.jamcam2025.com/es">
+    <link rel="alternate" hreflang="en" href="https://www.jamcam2025.com/en">
+    <link rel="alternate" hreflang="fr" href="https://www.jamcam2025.com/fr">
+    <link rel="alternate" hreflang="pt" href="https://www.jamcam2025.com/pt">
+    <link rel="alternate" hreflang="x-default" href="https://www.jamcam2025.com">
+
+    <!-- Structured Data-->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Event",
+          "name": "JamCam 2025",
+          "startDate": "2025-12-26",
+          "endDate": "2026-01-02",
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "location": {
+            "@type": "Place",
+            "name": "Cali, Colombia",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Cali",
+              "addressCountry": "CO"
+            }
+          },
+          "image": "https://www.jamcam2025.com/assets/og-image.jpg",
+          "description": "Cali will be the epicenter of Scouting with JamCam 2025, from December 26, 2025 to January 2, 2026. Thousands of young Scouts from the Americas will unite for peace, brotherhood, and adventure.",
+          "organizer": {
+            "@type": "Organization",
+            "name": "Scouts Colombia",
+            "url": "https://www.jamcam2025.com"
+          }
+        }
+    </script>
+
+    <!-- Load self-hosted fonts -->
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://www.jamcam2025.com/en">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JamCam 2025 - Americas United for Peace | Cali, Colombia">
+    <meta property="og:description" content="Cali will be the epicenter of Scouting with JamCam 2025, from December 26, 2025 to January 2, 2026. Thousands of young Scouts from the Americas will unite for peace, brotherhood, and adventure.">
+    <meta property="og:image" content="https://www.jamcam2025.com/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="JamCam 2025">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ScoutsColombia">
+    <meta name="twitter:creator" content="@ScoutsColombia">
+    <meta property="twitter:url" content="https://www.jamcam2025.com/en">
+    <meta name="twitter:title" content="JamCam 2025 - Americas United for Peace | Cali, Colombia">
+    <meta name="twitter:description" content="Cali will be the epicenter of Scouting with JamCam 2025, from December 26, 2025 to January 2, 2026. Thousands of young Scouts from the Americas will unite for peace, brotherhood, and adventure.">
+    <meta name="twitter:image" content="https://www.jamcam2025.com/assets/og-image.jpg">
+
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#58238B">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.jamcam2025.com/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.jamcam2025.com/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.jamcam2025.com/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://www.jamcam2025.com/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://www.jamcam2025.com/assets/favicon/safari-pinned-tab.svg" color="#58238B">
     <meta name="msapplication-TileColor" content="#58238B">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Load self-hosted fonts -->
-    <link rel="stylesheet" href="/css/fonts.css">
-    
     <!-- CSS -->
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/main-banner.css">
@@ -74,25 +134,21 @@
         <section class="countdown-section">
             <div class="countdown-container stagger-animation">
                 <div class="countdown-item">
-                    <img src="../assets/timer-mobile-green.webp" alt="Timer Background" class="timer-bg mobile">
                     <div class="countdown-value" id="days">000</div>
                     <div class="countdown-label">Days</div>
                     <svg class="card-decorative-svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.09 19.36"><g id="Layer_1-2" data-name="Layer 1"><g><line class="cls-1" x1="2.07" y1="17.29" x2="17.26" y2="2.07"/><line class="cls-1" x1="17.26" y1="17.29" x2="32.46" y2="2.07"/><line class="cls-1" x1="17.26" y1="2.07" x2="17.26" y2="17.29"/><line class="cls-1" x1="32.46" y1="17.29" x2="47.66" y2="2.07"/><line class="cls-1" x1="32.46" y1="2.07" x2="32.46" y2="17.29"/><line class="cls-1" x1="47.66" y1="17.29" x2="62.85" y2="2.07"/><line class="cls-1" x1="47.66" y1="2.07" x2="47.66" y2="17.29"/><line class="cls-1" x1="62.85" y1="17.29" x2="78.05" y2="2.07"/><line class="cls-1" x1="62.85" y1="2.07" x2="62.85" y2="17.29"/><line class="cls-1" x1="78.05" y1="17.29" x2="93.25" y2="2.07"/><line class="cls-1" x1="78.05" y1="2.07" x2="78.05" y2="17.29"/><line class="cls-1" x1="93.25" y1="17.29" x2="108.45" y2="2.07"/><line class="cls-1" x1="93.25" y1="2.07" x2="93.25" y2="17.29"/><line class="cls-1" x1="108.45" y1="17.29" x2="123.64" y2="2.07"/><line class="cls-1" x1="108.45" y1="2.07" x2="108.45" y2="17.29"/><line class="cls-1" x1="123.64" y1="17.29" x2="138.84" y2="2.07"/><line class="cls-1" x1="123.64" y1="2.07" x2="123.64" y2="17.29"/><line class="cls-1" x1="138.84" y1="17.29" x2="154.04" y2="2.07"/><line class="cls-1" x1="138.84" y1="2.07" x2="138.84" y2="17.29"/><line class="cls-1" x1="154.04" y1="17.29" x2="169.23" y2="2.07"/><line class="cls-1" x1="154.04" y1="2.07" x2="154.04" y2="17.29"/><line class="cls-1" x1="169.23" y1="17.29" x2="184.43" y2="2.07"/><line class="cls-1" x1="169.23" y1="2.07" x2="169.23" y2="17.29"/><line class="cls-1" x1="184.43" y1="17.29" x2="199.63" y2="2.07"/><line class="cls-1" x1="184.43" y1="2.07" x2="184.43" y2="17.29"/><line class="cls-1" x1="199.63" y1="17.29" x2="214.82" y2="2.07"/><line class="cls-1" x1="199.63" y1="2.07" x2="199.63" y2="17.29"/><line class="cls-1" x1="214.82" y1="17.29" x2="230.02" y2="2.07"/><line class="cls-1" x1="214.82" y1="2.07" x2="214.82" y2="17.29"/></g></g></svg>
                 </div>
                 <div class="countdown-item">
-                    <img src="../assets/timer-mobile-orange.webp" alt="Timer Background" class="timer-bg mobile">
                     <div class="countdown-value" id="hours">00</div>
                     <div class="countdown-label">Hours</div>
                     <svg class="card-decorative-svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.09 19.36"><g id="Layer_1-2" data-name="Layer 1"><g><line class="cls-1" x1="2.07" y1="17.29" x2="17.26" y2="2.07"/><line class="cls-1" x1="17.26" y1="17.29" x2="32.46" y2="2.07"/><line class="cls-1" x1="17.26" y1="2.07" x2="17.26" y2="17.29"/><line class="cls-1" x1="32.46" y1="17.29" x2="47.66" y2="2.07"/><line class="cls-1" x1="32.46" y1="2.07" x2="32.46" y2="17.29"/><line class="cls-1" x1="47.66" y1="17.29" x2="62.85" y2="2.07"/><line class="cls-1" x1="47.66" y1="2.07" x2="47.66" y2="17.29"/><line class="cls-1" x1="62.85" y1="17.29" x2="78.05" y2="2.07"/><line class="cls-1" x1="62.85" y1="2.07" x2="62.85" y2="17.29"/><line class="cls-1" x1="78.05" y1="17.29" x2="93.25" y2="2.07"/><line class="cls-1" x1="78.05" y1="2.07" x2="78.05" y2="17.29"/><line class="cls-1" x1="93.25" y1="17.29" x2="108.45" y2="2.07"/><line class="cls-1" x1="93.25" y1="2.07" x2="93.25" y2="17.29"/><line class="cls-1" x1="108.45" y1="17.29" x2="123.64" y2="2.07"/><line class="cls-1" x1="108.45" y1="2.07" x2="108.45" y2="17.29"/><line class="cls-1" x1="123.64" y1="17.29" x2="138.84" y2="2.07"/><line class="cls-1" x1="123.64" y1="2.07" x2="123.64" y2="17.29"/><line class="cls-1" x1="138.84" y1="17.29" x2="154.04" y2="2.07"/><line class="cls-1" x1="138.84" y1="2.07" x2="138.84" y2="17.29"/><line class="cls-1" x1="154.04" y1="17.29" x2="169.23" y2="2.07"/><line class="cls-1" x1="154.04" y1="2.07" x2="154.04" y2="17.29"/><line class="cls-1" x1="169.23" y1="17.29" x2="184.43" y2="2.07"/><line class="cls-1" x1="169.23" y1="2.07" x2="169.23" y2="17.29"/><line class="cls-1" x1="184.43" y1="17.29" x2="199.63" y2="2.07"/><line class="cls-1" x1="184.43" y1="2.07" x2="184.43" y2="17.29"/><line class="cls-1" x1="199.63" y1="17.29" x2="214.82" y2="2.07"/><line class="cls-1" x1="199.63" y1="2.07" x2="199.63" y2="17.29"/><line class="cls-1" x1="214.82" y1="17.29" x2="230.02" y2="2.07"/><line class="cls-1" x1="214.82" y1="2.07" x2="214.82" y2="17.29"/></g></g></svg>
                 </div>
                 <div class="countdown-item">
-                    <img src="../assets/timer-mobile-purple.webp" alt="Timer Background" class="timer-bg mobile">
                     <div class="countdown-value" id="minutes">00</div>
                     <div class="countdown-label">Minutes</div>
                     <svg class="card-decorative-svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.09 19.36"><g id="Layer_1-2" data-name="Layer 1"><g><line class="cls-1" x1="2.07" y1="17.29" x2="17.26" y2="2.07"/><line class="cls-1" x1="17.26" y1="17.29" x2="32.46" y2="2.07"/><line class="cls-1" x1="17.26" y1="2.07" x2="17.26" y2="17.29"/><line class="cls-1" x1="32.46" y1="17.29" x2="47.66" y2="2.07"/><line class="cls-1" x1="32.46" y1="2.07" x2="32.46" y2="17.29"/><line class="cls-1" x1="47.66" y1="17.29" x2="62.85" y2="2.07"/><line class="cls-1" x1="47.66" y1="2.07" x2="47.66" y2="17.29"/><line class="cls-1" x1="62.85" y1="17.29" x2="78.05" y2="2.07"/><line class="cls-1" x1="62.85" y1="2.07" x2="62.85" y2="17.29"/><line class="cls-1" x1="78.05" y1="17.29" x2="93.25" y2="2.07"/><line class="cls-1" x1="78.05" y1="2.07" x2="78.05" y2="17.29"/><line class="cls-1" x1="93.25" y1="17.29" x2="108.45" y2="2.07"/><line class="cls-1" x1="93.25" y1="2.07" x2="93.25" y2="17.29"/><line class="cls-1" x1="108.45" y1="17.29" x2="123.64" y2="2.07"/><line class="cls-1" x1="108.45" y1="2.07" x2="108.45" y2="17.29"/><line class="cls-1" x1="123.64" y1="17.29" x2="138.84" y2="2.07"/><line class="cls-1" x1="123.64" y1="2.07" x2="123.64" y2="17.29"/><line class="cls-1" x1="138.84" y1="17.29" x2="154.04" y2="2.07"/><line class="cls-1" x1="138.84" y1="2.07" x2="138.84" y2="17.29"/><line class="cls-1" x1="154.04" y1="17.29" x2="169.23" y2="2.07"/><line class="cls-1" x1="154.04" y1="2.07" x2="154.04" y2="17.29"/><line class="cls-1" x1="169.23" y1="17.29" x2="184.43" y2="2.07"/><line class="cls-1" x1="169.23" y1="2.07" x2="169.23" y2="17.29"/><line class="cls-1" x1="184.43" y1="17.29" x2="199.63" y2="2.07"/><line class="cls-1" x1="184.43" y1="2.07" x2="184.43" y2="17.29"/><line class="cls-1" x1="199.63" y1="17.29" x2="214.82" y2="2.07"/><line class="cls-1" x1="199.63" y1="2.07" x2="199.63" y2="17.29"/><line class="cls-1" x1="214.82" y1="17.29" x2="230.02" y2="2.07"/><line class="cls-1" x1="214.82" y1="2.07" x2="214.82" y2="17.29"/></g></g></svg>
                 </div>
                 <div class="countdown-item">
-                    <img src="../assets/timer-mobile-yellow.webp" alt="Timer Background" class="timer-bg mobile">
                     <div class="countdown-value" id="seconds">00</div>
                     <div class="countdown-label">Seconds</div>
                     <svg class="card-decorative-svg" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.09 19.36"><g id="Layer_1-2" data-name="Layer 1"><g><line class="cls-1" x1="2.07" y1="17.29" x2="17.26" y2="2.07"/><line class="cls-1" x1="17.26" y1="17.29" x2="32.46" y2="2.07"/><line class="cls-1" x1="17.26" y1="2.07" x2="17.26" y2="17.29"/><line class="cls-1" x1="32.46" y1="17.29" x2="47.66" y2="2.07"/><line class="cls-1" x1="32.46" y1="2.07" x2="32.46" y2="17.29"/><line class="cls-1" x1="47.66" y1="17.29" x2="62.85" y2="2.07"/><line class="cls-1" x1="47.66" y1="2.07" x2="47.66" y2="17.29"/><line class="cls-1" x1="62.85" y1="17.29" x2="78.05" y2="2.07"/><line class="cls-1" x1="62.85" y1="2.07" x2="62.85" y2="17.29"/><line class="cls-1" x1="78.05" y1="17.29" x2="93.25" y2="2.07"/><line class="cls-1" x1="78.05" y1="2.07" x2="78.05" y2="17.29"/><line class="cls-1" x1="93.25" y1="17.29" x2="108.45" y2="2.07"/><line class="cls-1" x1="93.25" y1="2.07" x2="93.25" y2="17.29"/><line class="cls-1" x1="108.45" y1="17.29" x2="123.64" y2="2.07"/><line class="cls-1" x1="108.45" y1="2.07" x2="108.45" y2="17.29"/><line class="cls-1" x1="123.64" y1="17.29" x2="138.84" y2="2.07"/><line class="cls-1" x1="123.64" y1="2.07" x2="123.64" y2="17.29"/><line class="cls-1" x1="138.84" y1="17.29" x2="154.04" y2="2.07"/><line class="cls-1" x1="138.84" y1="2.07" x2="138.84" y2="17.29"/><line class="cls-1" x1="154.04" y1="17.29" x2="169.23" y2="2.07"/><line class="cls-1" x1="154.04" y1="2.07" x2="154.04" y2="17.29"/><line class="cls-1" x1="169.23" y1="17.29" x2="184.43" y2="2.07"/><line class="cls-1" x1="169.23" y1="2.07" x2="169.23" y2="17.29"/><line class="cls-1" x1="184.43" y1="17.29" x2="199.63" y2="2.07"/><line class="cls-1" x1="184.43" y1="2.07" x2="184.43" y2="17.29"/><line class="cls-1" x1="199.63" y1="17.29" x2="214.82" y2="2.07"/><line class="cls-1" x1="199.63" y1="2.07" x2="199.63" y2="17.29"/><line class="cls-1" x1="214.82" y1="17.29" x2="230.02" y2="2.07"/><line class="cls-1" x1="214.82" y1="2.07" x2="214.82" y2="17.29"/></g></g></svg>
@@ -104,7 +160,7 @@
             <div class="info-container">
                 <div class="info-text-column">
                     <div class="text-row slide-in-left">
-                        <h1>JamCam 2025 - America United for Peace</h1>
+                        <h1>JamCam 2025 - Americas United for Peace</h1>
                         <h2>Discover the adventure of JamCam 2025</h2>
                     </div>
                     <div class="text-row fade-up">
@@ -272,7 +328,7 @@
                 <div class="footer-copyright slide-in-left">
                     <p>&copy; <span id="year"></span> All rights reserved</p>
                     <p>Designed by <strong>Asociación Scouts de Colombia</strong></p>
-                    <p>Developed by <strong>Camilo Agudelo Jaramillo</strong></p>
+                    <p>Developed by <strong>NoLit Developers</strong></p>
                 </div>
                 <div class="footer-social slide-in-right">
                     <a href="https://linktr.ee/JamCamOfficial" class="social-link" aria-label="Linktree">
@@ -295,17 +351,17 @@
             <img src="../assets/flags/us.svg" alt="USA Flag">
         </button>
         <div class="language-options">
+            <button class="language-option" aria-label="Seleccionar Español">
+                <span class="language-label">ES</span>
+                <img src="../assets/flags/co.svg" alt="Colombia Flag">
+            </button>
             <button class="language-option" aria-label="Selecionar Português">
                 <span class="language-label">PT</span>
-                <img src="../assets/flags/br.svg" alt="Bandeira do Brasil">
+                <img src="../assets/flags/br.svg" alt="Brazil Flag">
             </button>
             <button class="language-option" aria-label="Sélectionner Français">
                 <span class="language-label">FR</span>
-                <img src="../assets/flags/ca.svg" alt="Drapeau du Canada">
-            </button>
-            <button class="language-option" aria-label="Seleccionar Español">
-                <span class="language-label">ES</span>
-                <img src="../assets/flags/co.svg" alt="Bandera de Colombia">
+                <img src="../assets/flags/ca.svg" alt="Canada Flag">
             </button>
         </div>
     </div>

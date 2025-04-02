@@ -17,12 +17,34 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "public, max-age=0, must-revalidate"
+            "value": "public, max-age=3600"
           }
         ]
       }
     ],
     "cleanUrls": true,
-    "trailingSlash": false
-  }
+    "trailingSlash": false,
+    "routes": [
+      { 
+        "src": "/en/.*", 
+        "status": 404,
+        "dest": "/en/404.html"
+      },
+      { 
+        "src": "/es/.*", 
+        "status": 404,
+        "dest": "/es/404.html"
+      },
+      { 
+        "src": "/fr/.*", 
+        "status": 404,
+        "dest": "/fr/404.html"
+      },
+      { 
+        "src": "/pt/.*", 
+        "status": 404,
+        "dest": "/pt/404.html"
+      }
+    ]
+}
   

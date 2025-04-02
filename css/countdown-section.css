@@ -1,5 +1,5 @@
 .countdown-section {
-    padding: 75px 20px 150px 20px;
+    padding: 90px 20px 125px 20px;
     background-color: var(--background-color);
 }
 
@@ -108,6 +108,54 @@
     font-weight: 600;
     color: var(--green);
     bottom: -30px;
+}
+
+@media (max-width: 1200px) {
+
+    .countdown-section {
+        padding: 90px 20px 90px 20px;
+    }
+
+    .countdown-container {
+        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .countdown-item {
+        width: 220px;
+        height: 130px;
+    }
+
+    .countdown-value {
+        font-size: 2.8rem;
+    }
+
+    .countdown-item .card-decorative-svg {
+        width: 100px;
+    }
+
+    .countdown-item:nth-child(1) .card-decorative-svg {
+        margin-right: 125px;
+        margin-left: 0;
+        margin-bottom: 65px;
+    }
+    
+    .countdown-item:nth-child(2) .card-decorative-svg {
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 120px;
+    }
+    
+    .countdown-item:nth-child(3) .card-decorative-svg {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .countdown-item:nth-child(4) .card-decorative-svg {
+        margin-right: -35px;
+        margin-bottom: 65px;
+    }
 }
 
 @media (max-width: 768px) {

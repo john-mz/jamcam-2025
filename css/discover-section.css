@@ -86,23 +86,20 @@
     cursor: pointer;
     text-decoration: none;
     border: 2px solid var(--green);
+    transform-origin: center;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .discover-btn:hover {
-    background-color: #FFFFFF;
-    color: var(--green);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .discover-btn svg {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
-    transition: all 0.3s ease;
-}
-
-.discover-btn:hover svg {
-    fill: var(--green);
 }
 
 @media (max-width: 768px) {

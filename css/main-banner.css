@@ -12,7 +12,7 @@
     position: relative;
     width: 100%;
     padding-top: 50%;
-    padding-bottom: 8%;
+    padding-bottom: 6.2%;
     background-image: url('../assets/banner-desktop-green.webp');
     background-position: center top;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
 
 .banner-logo {
     position: absolute;
-    top: 34%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 30%;
@@ -33,9 +33,16 @@
     contain: paint;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .main-banner {
         margin-top: var(--nav-height-mobile);
+        min-height: 60vh;
+    }
+
+    .banner-content {
+        padding-top: 70%;
+        padding-bottom: 20%;
+        background-size: 160% auto;
     }
 }
 
