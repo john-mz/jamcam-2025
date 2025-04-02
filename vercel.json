@@ -9,7 +9,11 @@
       { "source": "/fr", "destination": "/fr/" },
       { "source": "/fr/(.*)", "destination": "/fr/$1" },
       { "source": "/pt", "destination": "/pt/" },
-      { "source": "/pt/(.*)", "destination": "/pt/$1" }
+      { "source": "/pt/(.*)", "destination": "/pt/$1" },
+      { "source": "/en/:path*", "destination": "/en/404.html" },
+      { "source": "/es/:path*", "destination": "/es/404.html" },
+      { "source": "/fr/:path*", "destination": "/fr/404.html" },
+      { "source": "/pt/:path*", "destination": "/pt/404.html" }
     ],
     "headers": [
       {
@@ -17,34 +21,12 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "public, max-age=3600"
+            "value": "public, max-age=31536000, immutable"
           }
         ]
       }
     ],
     "cleanUrls": true,
-    "trailingSlash": false,
-    "routes": [
-      { 
-        "src": "/en/.*", 
-        "status": 404,
-        "dest": "/en/404.html"
-      },
-      { 
-        "src": "/es/.*", 
-        "status": 404,
-        "dest": "/es/404.html"
-      },
-      { 
-        "src": "/fr/.*", 
-        "status": 404,
-        "dest": "/fr/404.html"
-      },
-      { 
-        "src": "/pt/.*", 
-        "status": 404,
-        "dest": "/pt/404.html"
-      }
-    ]
+    "trailingSlash": false
 }
   
