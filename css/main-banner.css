@@ -18,6 +18,8 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     will-change: transform;
+    content-visibility: auto;
+    contain: paint layout;
 }
 
 .banner-logo {
