@@ -1,8 +1,8 @@
-![JamCam 2025](assets/og-image.jpg)
-
 # JamCam 2025 Website
 
 Official website for JamCam 2025 - Américas Unidas por la Paz, a transformative Scout event that will bring together thousands of young people from across the Americas to celebrate brotherhood, diversity, and adventure.
+
+![JamCam 2025](assets/og-image.jpg)
 
 ## About the Development
 

@@ -1,0 +1,6 @@
+# Ignore Vercel configuration files
+.vercel/
+
+# Ignore editor settings
+.vscode/
+.idea/
